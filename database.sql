@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS tracked_repos (
+  id SERIAL PRIMARY KEY,
+  team_name VARCHAR(100) NOT NULL,
+  github_username VARCHAR(100) NOT NULL,
+  repo_name VARCHAR(100) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Black Hackathon Theme */
+body {
+  background: #050505;
+  color: #e8e8e8;
+  font-family: 'Space Mono', monospace;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+}
+
+.card {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+input {
+  transition: 0.25s ease;
+}
+
+input:focus {
+  border-color: #4cc9f0;
+  box-shadow: 0 0 10px rgba(76, 201, 240, 0.3);
+}
+
+.button {
+  background: #4cc9f0;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background: #72eaff;
+  box-shadow: 0 0 12px #4cc9f0;
+}
+
+/* Table */
+.table-wrapper {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: rgba(255,255,255,0.08);
+  position: sticky;
+  top: 0;
+}
+
+th, td {
+  padding: 12px;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+tbody tr:hover {
+  background: rgba(255,255,255,0.06);
+}
